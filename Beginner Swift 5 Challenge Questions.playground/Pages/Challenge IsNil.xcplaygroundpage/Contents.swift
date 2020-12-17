@@ -7,8 +7,16 @@ class Challenge {
 
     func isNil(_ testNumber: Int?) -> Bool {
         
-        return true
+        //MISSION: When the value is nil, return the true. In the flip side, return false.
         
+        //Use the safe way unwrapp the optional varaible to check wether the nil or not?
+        if let testNumber = testNumber {
+            print("The input number is \(testNumber). ")
+            return false
+        }
+        else{
+            return true
+        }
     }
 
 }
